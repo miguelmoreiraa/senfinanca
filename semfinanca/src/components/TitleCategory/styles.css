@@ -1,0 +1,7 @@
+.title-category {
+    font: 400 150% 'Archivo', sans-serif;
+    color: #000;
+    display: flex;
+    font-weight: bold;
+    width: 12vw;
+}

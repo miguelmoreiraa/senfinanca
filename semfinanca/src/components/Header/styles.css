@@ -1,0 +1,11 @@
+.headerSenFinanca {
+    background-color: #3CB9AC;
+    height: 100px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 2%;
+}

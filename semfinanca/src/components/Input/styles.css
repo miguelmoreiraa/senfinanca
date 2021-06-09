@@ -1,0 +1,13 @@
+.input {
+    width: 80%;
+    height: 50px;
+    margin-top: 0.8rem;    
+    border-radius: 1rem;
+    background: white;
+    outline: 0;
+    padding: 0 1.6rem;  
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font: 500 1.5rem Archivo;
+}

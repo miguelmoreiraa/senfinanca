@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+input,
+button{ 
+    /* Com o rem podemos deixar nosso site mais fluído */
+    font: 100 16px Archivo;
+    background-color: #E5E5E5;
+} 

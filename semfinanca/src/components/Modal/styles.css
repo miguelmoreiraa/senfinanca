@@ -1,0 +1,39 @@
+.modal {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    flex-direction: column;
+    background-color: rgb(187, 187, 187);
+    margin-left: 50%;
+    left: -12.5%;
+    z-index: 2;
+}
+
+.modal input {
+    position: relative;
+    width: 60%;
+    height: 15%;
+    border: none;
+    margin: 10px 20%;
+}
+
+.buttons {
+    margin: 10px 19%;
+}
+
+.buttons button {
+    border: none;
+    border-radius: 2px solid;
+    padding: 4px;
+    background-color: #F3DC68;
+}
+
+.buttons button:first-child {
+    margin-right: 50px;
+}
+
+.labelEdicao {
+    margin-left: 20%;
+}

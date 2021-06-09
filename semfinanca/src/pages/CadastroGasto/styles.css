@@ -1,0 +1,46 @@
+.page-cadastro-gasto {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    width: 35%;
+    height: auto;
+    background-color:white;
+    margin-left: 32.5%;
+    margin-top: 7vh;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hr {
+    width: 82%;
+    height: 1px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.headerGastos {
+    width: 100%;
+    height: 80px;
+    background-color: #F3DC68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 400 150% 'Archivo', sans-serif;
+    color: #000;
+}
+
+.botão{
+    width: 250px;
+    height: 40px;
+    margin-left: 30%;
+    margin-top: 35px;
+    border-radius: 50px;
+    background-color: #F3DC68;
+}

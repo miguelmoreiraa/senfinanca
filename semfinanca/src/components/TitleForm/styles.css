@@ -1,0 +1,9 @@
+.title {
+    font: 100 120% 'Archivo', sans-serif;
+    color: #000;
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+    margin-left: 11.5%;
+    margin-top: 20px;
+}
