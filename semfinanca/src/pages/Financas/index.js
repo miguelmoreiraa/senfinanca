@@ -26,7 +26,7 @@ function CadastroGasto() {
 
     const [pagamento, setPagamento] = useState('')
     const [recebimento, setRecebimento] = useState('')
-    const [total, setTotal] = useState('')
+
 
     const carregarGastos = () => {
         axios.get('https://60b8f73980400f00177b5f1b.mockapi.io/semfinanca/gastos').then(function (resposta) {
@@ -63,9 +63,6 @@ function CadastroGasto() {
                 setPagamento(parseInt(item.valor))
             }
         })
-        console.log("Total " + parseInt(recebimento - pagamento))
-        setTotal(parseInt(recebimento - pagamento))
-
     }
 
 
@@ -73,8 +70,8 @@ function CadastroGasto() {
 
     useEffect(() => {
         carregarGastos()
-        pagamentosConfirmados()   
-    }, [])
+        pagamentosConfirmados()
+    })
 
 
 
