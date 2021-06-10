@@ -5,9 +5,11 @@ import Header from '../../components/Header'
 import Input from '../../components/Input';
 import TitleForm from '../../components/TitleForm';
 import axios from 'axios';
+import { useHistory } from 'react-router';
 
 function CadastroGasto() {
 
+    let history = useHistory()
     const [titulo, setTitulo] = useState()
     const [tipo, setTipo] = useState()
     const [categoria, setCategoria] = useState()
@@ -33,6 +35,12 @@ function CadastroGasto() {
 
 
 
+    const handleClick = () => {
+        history.push("/financas")
+    }
+
+
+
 
     return (
         <div className="page-cadastro-gasto">
@@ -51,7 +59,7 @@ function CadastroGasto() {
                         value={titulo}
                         onChange={e => setTitulo(e.target.value)}
                     />
-                    <TitleForm>Tipo</TitleForm>
+                    <TitleForm>Tipo (Entrada ou Saída)</TitleForm>
                     <Input
                         name="tipo"
                         type="text"
@@ -78,6 +86,9 @@ function CadastroGasto() {
                 </div>
                 <button className="botão">Adicionar Gastos</button>
             </form>
+            <div className="verGastos">
+                <button onClick={handleClick}>Veja seus gastos</button>
+            </div>
         </div>
     );
 }

@@ -6,7 +6,7 @@
 .form {
     width: 35%;
     height: auto;
-    background-color:white;
+    background-color: white;
     margin-left: 32.5%;
     margin-top: 7vh;
 }
@@ -36,10 +36,32 @@
     color: #000;
 }
 
-.botão{
+.botão {
     width: 250px;
     height: 40px;
-    margin-left: 30%;
+    margin-left: 23%;
+    margin-top: 35px;
+    border-radius: 50px;
+    background-color: #F3DC68;
+}
+
+.verGastos {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10%;
+    margin-left:2% ;
+}
+
+.verGastos button {
+    width: 250px;
+    height: 40px;
+    margin-left: 23%;
     margin-top: 35px;
     border-radius: 50px;
     background-color: #F3DC68;

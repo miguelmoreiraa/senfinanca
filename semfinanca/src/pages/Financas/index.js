@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import './styles.css';
 
 import { IoIosAddCircleOutline } from "react-icons/io";
-import { GrEdit, GrFormSubtract } from "react-icons/gr";
+import { GrEdit } from "react-icons/gr";
 import { BiTrash } from "react-icons/bi";
 
 import Header from '../../components/Header'
@@ -20,10 +20,12 @@ import Modal from '../../components/Modal';
 
 function CadastroGasto() {
 
+
+
     const [gasto, setGasto] = useState([])
     const [abrir, setAbrir] = useState(false)
     const [id, setId] = useState(false)
-    const [busca, setBusca] = useState('')
+    const [busca] = useState('')
     console.log(busca)
 
 
@@ -65,11 +67,13 @@ function CadastroGasto() {
         })
     }
 
-    const gastosFiltrados = gasto
-        .filter((gastos) => gasto.includes(busca.toLowerCase))
 
 
-    console.log(gastosFiltrados)
+    // const gastosFiltrados = gasto
+    //     .filter((gastos) => gasto.includes(busca.toLowerCase))
+
+
+
 
 
     useEffect(() => {
@@ -147,13 +151,13 @@ function CadastroGasto() {
                 <br></br>
                 <label>Entrada/Saida</label>
                 <input
-                    value={busca}
-                    onChange={((ev) => setBusca(ev.target.value))}
+                // value={busca}
+                // onChange={((ev) => setBusca(ev.target.value))}
                 />
                 <label>Categoria</label>
                 <input
-                    value={busca}
-                    onChange={((ev) => setBusca(ev.target.value))}
+                // value={busca}
+                // onChange={((ev) => setBusca(ev.target.value))}
                 />
             </div>
         </div>
